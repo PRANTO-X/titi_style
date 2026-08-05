@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+@source not "../qx_orolo.myshopiefy.com/**";
+
+@theme {
+  --color-primary: #a8741a;
+  --color-primary-dark: #8a5f12;
+  --color-secondary: #7a6256;
+  --color-ink: #111111;
+  --color-body: #666666;
+  --color-muted: #999999;
+  --color-sale: #84c8bb;
+  --color-soft: #f3eeed;
+  --color-cream: #f8ede7;
+  --color-line: #dee2e6;
+  --color-paper: #f4f4f4;
+  --color-error: #ec523e;
+  --color-drawer: #262626;
+  --color-night: #0a0908;
+  --color-umber: #1a120b;
+  --color-gold: #c9a25e;
+  --color-gold-light: #e9d3a0;
+  --color-gold-dim: #8a6d3b;
+
+  --font-sans: var(--font-open-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-rajdhani), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-ui: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --tracking-subtop: 0.3em;
+  --tracking-btn: 0.1em;
+
+  --duration-default: 300ms;
+  --duration-long: 600ms;
+
+  --radius-btn: 5px;
+  --radius-badge: 2px;
+
+  --breakpoint-site: 1440px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-body);
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-ink);
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: #ffffff;
+  }
+}
+
+@layer utilities {
+  .container-site {
+    width: 100%;
+    max-width: var(--breakpoint-site);
+    margin-inline: auto;
+    padding-inline: var(--container-hgutter, 15px);
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-fade-up-slow {
+    animation: fade-up-slow 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.7s both;
+  }
+
+  .animate-watch-in {
+    animation: watch-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-side-in-left {
+    animation: side-in-left 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-side-in-right {
+    animation: side-in-right 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-drift-a {
+    animation: drift-a 34s ease-in-out infinite alternate;
+  }
+
+  .animate-drift-b {
+    animation: drift-b 42s ease-in-out infinite alternate;
+  }
+
+  .animate-drift-c {
+    animation: drift-c 38s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-up-slow {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes watch-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes side-in-left {
+  from {
+    opacity: 0;
+    transform: translate3d(40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes side-in-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes drift-a {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(90px, 50px, 0);
+  }
+}
+
+@keyframes drift-b {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-70px, 60px, 0);
+  }
+}
+
+@keyframes drift-c {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(50px, -40px, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-up-slow,
+  .animate-watch-in,
+  .animate-side-in-left,
+  .animate-side-in-right,
+  .animate-drift-a,
+  .animate-drift-b,
+  .animate-drift-c {
+    animation: none;
+  }
+}
