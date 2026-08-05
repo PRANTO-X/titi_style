@@ -34,7 +34,7 @@ export function CartDrawer() {
         cart.length > 0 ? (
           <div>
             <div className="mb-4 flex items-center justify-between">
-              <span className="text-sm uppercase tracking-wide text-body">
+              <span className="text-sm tracking-wide text-body">
                 Subtotal
               </span>
               <span className="font-heading text-xl font-semibold text-ink">
@@ -88,7 +88,7 @@ export function CartDrawer() {
                 />
               </Link>
               <div className="flex flex-1 flex-col">
-                <span className="text-xs uppercase tracking-wide text-body">
+                <span className="text-xs tracking-wide text-body">
                   {product.brand}
                 </span>
                 <Link

@@ -15,7 +15,7 @@ export function ParallaxBanner() {
 
       <div className="container-site relative flex min-h-[550px] items-center py-16">
         <div className="max-w-xl bg-white/10 p-8 md:p-10">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-subtop text-primary">
+          <p className="mb-3 text-xs font-semibold tracking-subtop text-primary">
             Precision Meets Timeless Design
           </p>
           <h2 className="mb-3 text-3xl font-semibold uppercase text-white md:text-4xl">

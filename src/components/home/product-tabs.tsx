@@ -57,7 +57,7 @@ export function ProductTabs() {
                 aria-selected={tab.id === activeId}
                 onClick={() => setActiveId(tab.id)}
                 className={cn(
-                  "relative pb-2 font-heading text-xl font-semibold uppercase tracking-wide text-ink transition-colors after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:bg-primary after:transition-transform hover:text-primary",
+                  "relative pb-2 font-heading text-xl font-semibold tracking-wide text-ink transition-colors after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:bg-primary after:transition-transform hover:text-primary",
                   tab.id === activeId
                     ? "after:scale-x-100"
                     : "after:scale-x-0"

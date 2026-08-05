@@ -81,7 +81,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
       </div>
 
       <div className="flex flex-1 flex-col pt-4">
-        <span className="text-xs font-medium uppercase tracking-wide text-body">
+        <span className="text-xs font-medium tracking-wide text-body">
           {product.brand}
         </span>
         <Link
@@ -104,7 +104,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
         <button
           type="button"
           onClick={() => addToCart(product)}
-          className="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-sm bg-primary py-3 text-xs font-semibold uppercase tracking-btn text-white transition-colors hover:bg-ink"
+          className="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-sm bg-primary py-3 text-xs font-semibold tracking-btn text-white transition-colors hover:bg-ink"
         >
           <BagIcon className="h-4 w-4" />
           Add to Cart

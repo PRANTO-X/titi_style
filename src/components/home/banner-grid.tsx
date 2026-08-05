@@ -51,13 +51,13 @@ export function BannerGrid() {
               />
               <div className="absolute inset-0 bg-black/60 transition-colors group-hover:bg-black/50" />
               <div className="absolute inset-0 flex flex-col items-start justify-center p-8 md:p-12">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-subtop text-primary">
+                <p className="mb-3 text-xs font-semibold tracking-subtop text-primary">
                   {banner.subtop}
                 </p>
                 <h3 className="mb-5 max-w-md font-heading text-2xl font-semibold leading-tight text-white md:text-3xl">
                   {banner.title}
                 </h3>
-                <span className="inline-flex items-center gap-2 border-b-2 border-transparent pb-1 text-xs font-semibold uppercase tracking-btn text-white transition-colors group-hover:border-primary group-hover:text-primary">
+                <span className="inline-flex items-center gap-2 border-b-2 border-transparent pb-1 text-xs font-semibold tracking-btn text-white transition-colors group-hover:border-primary group-hover:text-primary">
                   {banner.ctaLabel}
                   <ArrowRightIcon className="h-4 w-4" />
                 </span>

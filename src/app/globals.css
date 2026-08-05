@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@source not "../qx_orolo.myshopiefy.com/**";
+@source not "../qx_orolo.myshopify.com/**";
 
 @theme {
   --color-primary: #a8741a;

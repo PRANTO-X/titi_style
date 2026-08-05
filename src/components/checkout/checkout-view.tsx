@@ -67,7 +67,7 @@ export function CheckoutView() {
   return (
     <div>
       <header className="mb-10 text-center">
-        <p className="mb-3 text-xs font-semibold uppercase tracking-subtop text-primary">
+        <p className="mb-3 text-xs font-semibold tracking-subtop text-primary">
           Secure Checkout
         </p>
         <h1 className="text-3xl uppercase md:text-4xl">Checkout</h1>
@@ -127,7 +127,7 @@ function CheckoutSuccess({ order }: { order: PlacedOrder }) {
       <span className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-sale text-white">
         <CheckIcon className="h-10 w-10" />
       </span>
-      <p className="mb-2 text-xs font-semibold uppercase tracking-subtop text-primary">
+      <p className="mb-2 text-xs font-semibold tracking-subtop text-primary">
         Order Confirmed
       </p>
       <h1 className="mb-4 text-3xl uppercase md:text-4xl">

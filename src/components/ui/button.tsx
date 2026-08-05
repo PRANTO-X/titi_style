@@ -35,7 +35,7 @@ type ButtonAsLink = ButtonBase &
 type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 const baseClasses =
-  "inline-flex items-center justify-center gap-2 rounded-btn font-sans font-semibold uppercase tracking-btn transition-colors duration-default focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary";
+  "inline-flex items-center justify-center gap-2 rounded-btn font-sans font-semibold tracking-btn transition-colors duration-default focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary";
 
 export function Button(props: ButtonProps) {
   const {

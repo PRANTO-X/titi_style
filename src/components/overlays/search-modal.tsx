@@ -112,7 +112,7 @@ export function SearchModal() {
                       <span className="font-heading text-base font-semibold text-ink hover:text-primary">
                         {product.name}
                       </span>
-                      <span className="text-xs uppercase text-body">
+                      <span className="text-xs text-body">
                         {product.brand}
                       </span>
                     </span>

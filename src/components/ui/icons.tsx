@@ -71,6 +71,16 @@ export function BagIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function FilterIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <IconBase {...props}>
+      <path d="M4 6h16M4 12h10M4 18h7" />
+      <circle cx="17" cy="12" r="2.5" />
+      <circle cx="14" cy="18" r="2.5" />
+    </IconBase>
+  );
+}
+
 export function MenuIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <IconBase {...props}>

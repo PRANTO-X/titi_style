@@ -66,7 +66,7 @@ export function OrderSummary({
           </dd>
         </div>
         <div className="flex items-center justify-between border-t border-dashed border-line pt-3">
-          <dt className="font-heading text-lg font-bold uppercase text-ink">Total</dt>
+          <dt className="font-heading text-lg font-bold text-ink">Total</dt>
           <dd className="font-heading text-xl font-bold text-ink">
             {formatPrice(total)}
           </dd>

@@ -31,7 +31,7 @@ export function ProductInfo({ product }: { product: Product }) {
   return (
     <div>
       <div className="flex items-center justify-between gap-4">
-        <span className="text-xs font-semibold uppercase tracking-subtop text-secondary">
+        <span className="text-xs font-semibold tracking-subtop text-secondary">
           {product.brand}
         </span>
         <button
@@ -116,7 +116,7 @@ export function ProductInfo({ product }: { product: Product }) {
       <dl className="mt-8 space-y-2 text-sm">
         <div className="flex gap-2">
           <dt className="font-semibold text-ink">SKU:</dt>
-          <dd className="uppercase text-body">{product.id}</dd>
+          <dd className="text-body">{product.id}</dd>
         </div>
         <div className="flex gap-2">
           <dt className="font-semibold text-ink">Availability:</dt>

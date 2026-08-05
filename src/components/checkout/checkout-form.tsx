@@ -86,7 +86,7 @@ function Field({
 }) {
   return (
     <label className={cn("block", className)}>
-      <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-ink">
+      <span className="mb-1.5 block text-xs font-semibold tracking-wide text-ink">
         {label} {required ? <span className="text-error">*</span> : null}
       </span>
       <input
@@ -190,7 +190,7 @@ export function CheckoutForm({
           />
           <Field label="City / Town" name="city" autoComplete="address-level2" />
           <label className="block">
-            <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-ink">
+            <span className="mb-1.5 block text-xs font-semibold tracking-wide text-ink">
               Division <span className="text-error">*</span>
             </span>
             <select

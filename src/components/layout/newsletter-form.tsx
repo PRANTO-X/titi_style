@@ -43,7 +43,7 @@ export function NewsletterForm() {
       />
       <button
         type="submit"
-        className="inline-flex h-[50px] shrink-0 items-center justify-center gap-2 rounded-btn border border-primary bg-primary px-6 text-xs font-semibold uppercase tracking-btn text-white transition-colors hover:bg-primary-dark"
+        className="inline-flex h-[50px] shrink-0 items-center justify-center gap-2 rounded-btn border border-primary bg-primary px-6 text-xs font-semibold tracking-btn text-white transition-colors hover:bg-primary-dark"
       >
         Subscribe
       </button>

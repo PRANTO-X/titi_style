@@ -8,7 +8,7 @@ import { formatPrice } from "@/lib/format";
 export function HeroCopy({ watch }: { watch: HeroWatch }) {
   return (
     <div key={watch.id} className="animate-fade-up text-center lg:text-left">
-      <p className="mb-3 font-ui text-[11px] uppercase tracking-[0.35em] text-gold">
+      <p className="mb-3 font-ui text-[11px] tracking-[0.35em] text-gold">
         {watch.tagline}
       </p>
       <Link href={`/shop/${watch.slug}`} className="inline-block">
@@ -24,7 +24,7 @@ export function HeroCopy({ watch }: { watch: HeroWatch }) {
       </p>
       <Link
         href={`/shop/${watch.slug}`}
-        className="group mt-8 inline-flex items-center gap-3 rounded-sm bg-gold px-8 py-4 font-ui text-[11px] uppercase tracking-[0.3em] text-night transition-all duration-500 hover:bg-gold-light hover:tracking-[0.38em] hover:shadow-[0_10px_40px_rgba(201,162,94,0.35)]"
+        className="group mt-8 inline-flex items-center gap-3 rounded-sm bg-gold px-8 py-4 font-ui text-[11px] tracking-[0.3em] text-night transition-all duration-500 hover:bg-gold-light hover:tracking-[0.38em] hover:shadow-[0_10px_40px_rgba(201,162,94,0.35)]"
       >
         View Details
         <ArrowRight

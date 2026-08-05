@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useStore } from "@/lib/store";
+import { cn } from "@/lib/format";
 import {
   BagIcon,
   HeartIcon,
@@ -9,11 +11,17 @@ import {
   SearchIcon,
 } from "@/components/ui/icons";
 
-const TAB_CLASS =
-  "flex flex-col items-center gap-1 py-2.5 text-ink/70 transition-colors hover:text-gold";
+const TAB_BASE =
+  "flex flex-col items-center gap-1 py-2.5 transition-colors";
 
 export function MobileTabbar() {
-  const { wishlistCount, openOverlay } = useStore();
+  const pathname = usePathname();
+  const { wishlistCount, overlay, openOverlay } = useStore();
+
+  const isHome = pathname === "/";
+  const isShop = pathname.startsWith("/shop");
+  const isSearch = overlay === "search";
+  const isWishlist = overlay === "wishlist";
 
   return (
     <nav
@@ -21,32 +29,44 @@ export function MobileTabbar() {
       className="fixed inset-x-0 bottom-0 z-40 border-t border-black/10 bg-cream/95 pb-[env(safe-area-inset-bottom)] backdrop-blur-md lg:hidden"
     >
       <div className="grid grid-cols-4">
-        <Link href="/" className={TAB_CLASS}>
+        <Link
+          href="/"
+          className={cn(
+            TAB_BASE,
+            isHome ? "text-gold" : "text-ink/70 hover:text-gold"
+          )}
+        >
           <HomeIcon className="h-5 w-5" />
-          <span className="font-ui text-[10px] uppercase tracking-widest">
-            Home
-          </span>
+          <span className="font-ui text-[10px] tracking-widest">Home</span>
         </Link>
-        <Link href="/shop" className={TAB_CLASS}>
+        <Link
+          href="/shop"
+          className={cn(
+            TAB_BASE,
+            isShop ? "text-gold" : "text-ink/70 hover:text-gold"
+          )}
+        >
           <BagIcon className="h-5 w-5" />
-          <span className="font-ui text-[10px] uppercase tracking-widest">
-            Shop
-          </span>
+          <span className="font-ui text-[10px] tracking-widest">Shop</span>
         </Link>
         <button
           type="button"
           onClick={() => openOverlay("search")}
-          className={TAB_CLASS}
+          className={cn(
+            TAB_BASE,
+            isSearch ? "text-gold" : "text-ink/70 hover:text-gold"
+          )}
         >
           <SearchIcon className="h-5 w-5" />
-          <span className="font-ui text-[10px] uppercase tracking-widest">
-            Search
-          </span>
+          <span className="font-ui text-[10px] tracking-widest">Search</span>
         </button>
         <button
           type="button"
           onClick={() => openOverlay("wishlist")}
-          className={TAB_CLASS}
+          className={cn(
+            TAB_BASE,
+            isWishlist ? "text-gold" : "text-ink/70 hover:text-gold"
+          )}
         >
           <span className="relative">
             <HeartIcon className="h-5 w-5" />
@@ -56,7 +76,7 @@ export function MobileTabbar() {
               </span>
             ) : null}
           </span>
-          <span className="font-ui text-[10px] uppercase tracking-widest">
+          <span className="font-ui text-[10px] tracking-widest">
             Wishlist
           </span>
         </button>

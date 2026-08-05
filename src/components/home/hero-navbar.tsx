@@ -60,7 +60,7 @@ export function HeroNavbar() {
                   <Link
                     href={link.href}
                     className={cn(
-                      "relative py-2 font-ui text-[11px] uppercase tracking-[0.28em] transition-colors duration-300 after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-gold after:transition-transform",
+                      "relative py-2 font-ui text-[11px] tracking-[0.28em] transition-colors duration-300 after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-gold after:transition-transform",
                       linkColor,
                       active
                         ? "text-gold after:scale-x-100"

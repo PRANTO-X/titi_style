@@ -57,7 +57,7 @@ export function WishlistDrawer() {
                 />
               </Link>
               <div className="flex flex-1 flex-col">
-                <span className="text-xs uppercase tracking-wide text-body">
+                <span className="text-xs tracking-wide text-body">
                   {product.brand}
                 </span>
                 <Link
@@ -73,7 +73,7 @@ export function WishlistDrawer() {
                 <button
                   type="button"
                   onClick={() => addToCart(product)}
-                  className="mt-2 self-start text-xs font-semibold uppercase tracking-btn text-primary underline-offset-4 hover:underline"
+                  className="mt-2 self-start text-xs font-semibold tracking-btn text-primary underline-offset-4 hover:underline"
                 >
                   Add to Cart
                 </button>

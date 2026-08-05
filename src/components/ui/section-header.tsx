@@ -25,12 +25,12 @@ export function SectionHeader({
         className
       )}
     >
-      <p className="text-xs font-semibold uppercase tracking-subtop text-primary">
+      <p className="text-xs font-semibold tracking-subtop text-primary">
         {subtop}
       </p>
       <h2
         className={cn(
-          "text-3xl uppercase md:text-4xl lg:text-[40px]",
+          "text-3xl md:text-4xl lg:text-[40px]",
           light && "text-white"
         )}
       >

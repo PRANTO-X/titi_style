@@ -17,7 +17,7 @@ export function Badge({ label, type = "sale", className }: BadgeProps) {
   return (
     <span
       className={cn(
-        "absolute left-4 top-4 rounded-badge px-2.5 py-1 text-xs font-semibold uppercase leading-none",
+        "absolute left-4 top-4 rounded-badge px-2.5 py-1 text-xs font-semibold leading-none",
         BADGE_CLASSES[type],
         className
       )}
