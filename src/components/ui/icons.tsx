@@ -54,6 +54,15 @@ export function SearchIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function LockIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <IconBase {...props}>
+      <rect x="5" y="11" width="14" height="9" rx="2" />
+      <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+    </IconBase>
+  );
+}
+
 export function HeartIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <IconBase {...props}>

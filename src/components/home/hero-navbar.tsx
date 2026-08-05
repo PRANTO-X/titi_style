@@ -121,13 +121,13 @@ export function HeroNavbar() {
               </span>
             ) : null}
           </button>
-          <button
-            type="button"
+          <Link
+            href="/login"
             aria-label="Account"
             className={cn("p-2 transition-colors duration-300", iconColor)}
           >
             <User className="h-5 w-5" strokeWidth={1.4} />
-          </button>
+          </Link>
         </div>
       </div>
     </header>
