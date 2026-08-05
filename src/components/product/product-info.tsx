@@ -36,9 +36,10 @@ export function ProductInfo({ product }: { product: Product }) {
         </span>
         <button
           type="button"
+          aria-label={wished ? "Remove from wishlist" : "Add to wishlist"}
           onClick={() => toggleWishlist(product.id)}
           className={cn(
-            "inline-flex items-center gap-2 text-sm transition-colors",
+            "transition-colors",
             wished ? "text-error" : "text-body hover:text-error"
           )}
         >
@@ -46,7 +47,6 @@ export function ProductInfo({ product }: { product: Product }) {
             className="h-5 w-5"
             {...(wished ? { fill: "currentColor" } : {})}
           />
-          {wished ? "Wishlisted" : "Add to Wishlist"}
         </button>
       </div>
 

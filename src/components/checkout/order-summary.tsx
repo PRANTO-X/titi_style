@@ -79,7 +79,7 @@ export function OrderSummary({
         </p>
       ) : null}
 
-      <Button type="submit" variant="dark" className="mt-6 w-full">
+      <Button type="submit" variant="primary" className="mt-6 w-full">
         Place Order
       </Button>
 

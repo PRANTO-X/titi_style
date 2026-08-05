@@ -43,7 +43,7 @@ export function CartDrawer() {
             </div>
             <Button
               href="/checkout"
-              variant="dark"
+              variant="primary"
               className="w-full"
               onClick={closeOverlay}
             >
