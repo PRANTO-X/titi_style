@@ -32,18 +32,18 @@ export function HeroNavbar() {
   const solid = !isHome || scrolled;
 
   const iconColor = solid
-    ? "text-ink hover:text-gold"
-    : "text-white hover:text-gold-light";
+    ? "text-ink hover:text-accent"
+    : "text-white hover:text-accent-light";
   const linkColor = solid
-    ? "text-ink/70 hover:text-gold"
-    : "text-white/70 hover:text-gold-light";
+    ? "text-ink/70 hover:text-accent"
+    : "text-white/70 hover:text-accent-light";
 
   return (
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-40 border-b backdrop-blur-md transition-all duration-500",
         solid
-          ? "border-black/10 bg-cream/95 shadow-[0_10px_30px_rgba(26,18,11,0.08)]"
+          ? "border-black/10 bg-cream/95 shadow-[0_10px_30px_rgba(42,14,18,0.08)]"
           : "border-white/10 bg-white/10"
       )}
     >
@@ -60,10 +60,10 @@ export function HeroNavbar() {
                   <Link
                     href={link.href}
                     className={cn(
-                      "relative py-2 font-ui text-[11px] tracking-[0.28em] transition-colors duration-300 after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-gold after:transition-transform",
+                      "relative py-2 font-ui text-[11px] tracking-[0.28em] transition-colors duration-300 after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-accent after:transition-transform",
                       linkColor,
                       active
-                        ? "text-gold after:scale-x-100"
+                        ? "text-accent after:scale-x-100"
                         : "after:scale-x-0 hover:after:scale-x-100"
                     )}
                   >
@@ -100,7 +100,7 @@ export function HeroNavbar() {
           >
             <Heart className="h-5 w-5" strokeWidth={1.4} />
             {wishlistCount > 0 ? (
-              <span className="absolute right-0 top-0 inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-gold px-1 text-[10px] font-semibold leading-none text-night">
+              <span className="absolute right-0 top-0 inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-accent px-1 text-[10px] font-semibold leading-none text-night">
                 {wishlistCount > 99 ? "99+" : wishlistCount}
               </span>
             ) : null}
@@ -116,7 +116,7 @@ export function HeroNavbar() {
           >
             <ShoppingBag className="h-5 w-5" strokeWidth={1.4} />
             {cartCount > 0 ? (
-              <span className="absolute right-0 top-0 inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-gold px-1 text-[10px] font-semibold leading-none text-night">
+              <span className="absolute right-0 top-0 inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-accent px-1 text-[10px] font-semibold leading-none text-night">
                 {cartCount > 99 ? "99+" : cartCount}
               </span>
             ) : null}

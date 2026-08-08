@@ -80,7 +80,7 @@ export function Testimonials() {
               onClick={() => goTo(index)}
               className={cn(
                 "h-1.5 rounded-full transition-all duration-500",
-                index === active ? "w-6 bg-gold" : "w-1.5 bg-ink/15"
+                index === active ? "w-6 bg-accent" : "w-1.5 bg-ink/15"
               )}
             />
           ))}

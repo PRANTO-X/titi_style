@@ -4,15 +4,15 @@ const GRAIN =
 const GLOWS = [
   {
     className: "left-[8%] top-[-10%] h-[40rem] w-[40rem] animate-drift-a",
-    tone: "gold",
+    tone: "accent",
   },
   {
     className: "right-[4%] top-[15%] h-[34rem] w-[34rem] animate-drift-b",
-    tone: "umber",
+    tone: "wine",
   },
   {
     className: "bottom-[-15%] left-[30%] h-[38rem] w-[38rem] animate-drift-c",
-    tone: "gold",
+    tone: "accent",
   },
 ];
 
@@ -20,7 +20,7 @@ export function HeroBackground() {
   return (
     <div aria-hidden className="absolute inset-0 overflow-hidden">
       <div className="absolute inset-0 bg-night" />
-      <div className="absolute inset-0 bg-gradient-to-b from-umber/60 via-night to-black" />
+      <div className="absolute inset-0 bg-gradient-to-b from-wine/60 via-night to-black" />
 
       {GLOWS.map((glow, index) => (
         <div
@@ -28,9 +28,9 @@ export function HeroBackground() {
           className={`absolute rounded-full ${glow.className}`}
           style={{
             background:
-              glow.tone === "umber"
-                ? "radial-gradient(circle, rgba(26,18,11,0.9) 0%, transparent 70%)"
-                : "radial-gradient(circle, var(--color-gold) 0%, transparent 70%)",
+              glow.tone === "wine"
+                ? "radial-gradient(circle, rgba(42,14,18,0.9) 0%, transparent 70%)"
+                : "radial-gradient(circle, var(--color-accent) 0%, transparent 70%)",
           }}
         />
       ))}

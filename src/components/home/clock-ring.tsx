@@ -23,7 +23,7 @@ export function ClockRing({ size = 620 }: ClockRingProps) {
           cx={size / 2}
           cy={size / 2}
           r={radius}
-          stroke="rgba(201,162,94,0.18)"
+          stroke="rgba(219,67,79,0.18)"
           strokeWidth="1"
         />
         {ticks.map((_, index) => {
@@ -41,8 +41,8 @@ export function ClockRing({ size = 620 }: ClockRingProps) {
               y2={size / 2 + inner * Math.sin(rad)}
               stroke={
                 major
-                  ? "rgba(201,162,94,0.5)"
-                  : "rgba(201,162,94,0.22)"
+                  ? "rgba(219,67,79,0.5)"
+                  : "rgba(219,67,79,0.22)"
               }
               strokeWidth={major ? 1.5 : 1}
             />

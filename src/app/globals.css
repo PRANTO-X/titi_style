@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
-@source not "../qx_orolo.myshopify.com/**";
 
 @theme {
-  --color-primary: #a8741a;
-  --color-primary-dark: #8a5f12;
-  --color-secondary: #7a6256;
+  /* Brand palette sampled from the logo mark (charcoal-black + crimson red) */
+  --color-primary: #c2202d;
+  --color-primary-dark: #8e1620;
+  --color-secondary: #57504c;
   --color-ink: #111111;
   --color-body: #666666;
   --color-muted: #999999;
@@ -17,10 +17,10 @@
   --color-error: #ec523e;
   --color-drawer: #262626;
   --color-night: #0a0908;
-  --color-umber: #1a120b;
-  --color-gold: #c9a25e;
-  --color-gold-light: #e9d3a0;
-  --color-gold-dim: #8a6d3b;
+  --color-wine: #2a0e12;
+  --color-accent: #db434f;
+  --color-accent-light: #e8757d;
+  --color-accent-dim: #962c34;
 
   --font-sans: var(--font-open-sans), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-rajdhani), ui-sans-serif, system-ui, sans-serif;

@@ -33,7 +33,7 @@ export function MobileTabbar() {
           href="/"
           className={cn(
             TAB_BASE,
-            isHome ? "text-gold" : "text-ink/70 hover:text-gold"
+            isHome ? "text-accent" : "text-ink/70 hover:text-accent"
           )}
         >
           <HomeIcon className="h-5 w-5" />
@@ -43,7 +43,7 @@ export function MobileTabbar() {
           href="/shop"
           className={cn(
             TAB_BASE,
-            isShop ? "text-gold" : "text-ink/70 hover:text-gold"
+            isShop ? "text-accent" : "text-ink/70 hover:text-accent"
           )}
         >
           <BagIcon className="h-5 w-5" />
@@ -54,7 +54,7 @@ export function MobileTabbar() {
           onClick={() => openOverlay("search")}
           className={cn(
             TAB_BASE,
-            isSearch ? "text-gold" : "text-ink/70 hover:text-gold"
+            isSearch ? "text-accent" : "text-ink/70 hover:text-accent"
           )}
         >
           <SearchIcon className="h-5 w-5" />
@@ -65,13 +65,13 @@ export function MobileTabbar() {
           onClick={() => openOverlay("wishlist")}
           className={cn(
             TAB_BASE,
-            isWishlist ? "text-gold" : "text-ink/70 hover:text-gold"
+            isWishlist ? "text-accent" : "text-ink/70 hover:text-accent"
           )}
         >
           <span className="relative">
             <HeartIcon className="h-5 w-5" />
             {wishlistCount > 0 ? (
-              <span className="absolute -right-2 -top-1.5 inline-flex h-3.5 min-w-3.5 items-center justify-center rounded-full bg-gold px-0.5 text-[9px] font-bold leading-none text-night">
+              <span className="absolute -right-2 -top-1.5 inline-flex h-3.5 min-w-3.5 items-center justify-center rounded-full bg-accent px-0.5 text-[9px] font-bold leading-none text-night">
                 {wishlistCount > 99 ? "99+" : wishlistCount}
               </span>
             ) : null}

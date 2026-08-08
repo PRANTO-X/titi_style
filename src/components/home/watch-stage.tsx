@@ -35,7 +35,7 @@ export function WatchStage({
           className="h-[36rem] w-[36rem] rounded-full"
           style={{
             background:
-              "radial-gradient(circle, rgba(201,162,94,0.14) 0%, rgba(26,18,11,0.35) 45%, transparent 70%)",
+              "radial-gradient(circle, rgba(219,67,79,0.14) 0%, rgba(42,14,18,0.35) 45%, transparent 70%)",
           }}
         />
       </div>

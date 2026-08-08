@@ -22,7 +22,7 @@ export function HeroShowcase() {
 
       <div className="container-site relative z-10 flex flex-1 flex-col pt-24 sm:pt-28 lg:pt-16">
         <div className="grid flex-1 grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)_minmax(0,1fr)] lg:items-center">
-          <div className="relative z-20 pb-10 pt-8 sm:pt-12 lg:pb-0 lg:pt-0">
+          <div className="relative z-20 pb-8 pt-4 sm:pb-10 sm:pt-8 lg:pb-0 lg:pt-0">
             <div className="lg:-translate-y-12 lg:pl-32">
               <HeroCopy watch={HERO_WATCHES[active]} />
             </div>
@@ -39,7 +39,7 @@ export function HeroShowcase() {
               type="button"
               aria-label="Previous watch"
               onClick={goPrev}
-              className="absolute left-2 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-night/40 text-white/70 backdrop-blur-sm transition-all duration-500 hover:border-gold hover:text-gold sm:left-5 sm:h-12 sm:w-12"
+              className="absolute left-2 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-night/40 text-white/70 backdrop-blur-sm transition-all duration-500 hover:border-accent hover:text-accent sm:left-5 sm:h-12 sm:w-12"
             >
               <ArrowLeft className="h-5 w-5" strokeWidth={1.6} />
             </button>
@@ -48,7 +48,7 @@ export function HeroShowcase() {
               type="button"
               aria-label="Next watch"
               onClick={goNext}
-              className="absolute right-2 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-night/40 text-white/70 backdrop-blur-sm transition-all duration-500 hover:border-gold hover:text-gold sm:right-5 sm:h-12 sm:w-12"
+              className="absolute right-2 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-night/40 text-white/70 backdrop-blur-sm transition-all duration-500 hover:border-accent hover:text-accent sm:right-5 sm:h-12 sm:w-12"
             >
               <ArrowRight className="h-5 w-5" strokeWidth={1.6} />
             </button>
@@ -74,7 +74,7 @@ export function HeroShowcase() {
               onClick={() => setActive(index)}
               className={cn(
                 "h-1 rounded-full transition-all duration-500",
-                index === active ? "w-8 bg-gold" : "w-3 bg-white/25"
+                index === active ? "w-8 bg-accent" : "w-3 bg-white/25"
               )}
             />
           ))}
