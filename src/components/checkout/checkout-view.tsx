@@ -13,6 +13,7 @@ import {
   type PaymentMethod,
 } from "@/components/checkout/types";
 import { BagIcon, CheckIcon } from "@/components/ui/icons";
+import { PageLoader } from "@/components/ui/page-loader";
 
 interface PlacedOrder {
   id: string;
@@ -75,7 +76,7 @@ export function CheckoutView() {
 
       <form
         onSubmit={handleSubmit}
-        className="grid items-start gap-10 lg:grid-cols-[1fr_400px]"
+        className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,400px)]"
       >
         <CheckoutForm
           delivery={delivery}
@@ -96,12 +97,7 @@ export function CheckoutView() {
 }
 
 function CheckoutLoading() {
-  return (
-    <div className="flex flex-col items-center gap-4 py-20 text-center">
-      <span className="h-10 w-10 animate-spin rounded-full border-2 border-primary border-t-transparent" />
-      <p className="text-body">Loading your cart…</p>
-    </div>
-  );
+  return <PageLoader label="Loading your cart…" className="min-h-[50vh]" />;
 }
 
 function EmptyCheckout() {

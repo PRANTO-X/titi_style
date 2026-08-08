@@ -136,12 +136,12 @@ function ChoiceCard({
         onChange={onChange}
         className="mt-1 h-4 w-4 shrink-0 accent-primary"
       />
-      <span className="flex-1">
+      <span className="min-w-0 flex-1">
         <span className="block text-sm font-semibold text-ink">{title}</span>
         <span className="block text-xs text-body">{note}</span>
       </span>
       {aside ? (
-        <span className="text-sm font-bold text-ink">{aside}</span>
+        <span className="shrink-0 text-sm font-bold text-ink">{aside}</span>
       ) : null}
     </label>
   );
@@ -155,7 +155,7 @@ export function CheckoutForm({
   freeDelivery,
 }: CheckoutFormProps) {
   return (
-    <div className="space-y-8">
+    <div className="min-w-0 space-y-8">
       <section className="rounded-sm border border-line bg-white p-6 shadow-sm md:p-8">
         <SectionTitle index="01" title="Contact Information" />
         <div className="grid gap-4 sm:grid-cols-2">

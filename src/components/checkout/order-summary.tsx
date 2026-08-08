@@ -22,7 +22,7 @@ export function OrderSummary({
   const { cart } = useStore();
 
   return (
-    <aside className="h-fit rounded-sm border border-line bg-white p-6 shadow-sm lg:sticky lg:top-24">
+    <aside className="h-fit min-w-0 rounded-sm border border-line bg-white p-6 shadow-sm lg:sticky lg:top-24">
       <h2 className="mb-4 text-xl font-semibold uppercase">Order Summary</h2>
 
       <ul className="divide-y divide-line">
@@ -43,7 +43,7 @@ export function OrderSummary({
               </p>
               <p className="text-xs text-body">Qty {quantity}</p>
             </div>
-            <span className="text-sm font-bold text-ink">
+            <span className="shrink-0 text-sm font-bold text-ink">
               {formatPrice(product.price * quantity)}
             </span>
           </li>
