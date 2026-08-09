@@ -72,6 +72,16 @@
     background-color: var(--color-primary);
     color: #ffffff;
   }
+
+  input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+  }
+
+  input[type="search"]::-ms-clear {
+    display: none;
+  }
 }
 
 @layer utilities {

@@ -56,7 +56,7 @@ export function SearchModal() {
       <div className="absolute inset-0 bg-black/50" onClick={closeOverlay} />
       <div
         className={cn(
-          "relative w-full max-w-2xl rounded-md bg-white shadow-xl transition-transform duration-long",
+          "relative flex max-h-[calc(100vh-8rem)] w-full max-w-2xl flex-col overflow-hidden rounded-md bg-white shadow-xl transition-transform duration-long",
           open ? "translate-y-0" : "-translate-y-4"
         )}
       >
@@ -81,7 +81,7 @@ export function SearchModal() {
           />
         </form>
 
-        <div className="border-t border-line px-5 py-4">
+        <div className="flex-1 overflow-y-auto border-t border-line px-5 py-4">
           {query.trim() === "" ? (
             <p className="py-6 text-center text-sm text-body">
               Start typing to search our collection.

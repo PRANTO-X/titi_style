@@ -40,7 +40,7 @@ export default async function ProductPage({
   ).slice(0, 4);
 
   return (
-    <main className="bg-white pb-10 pt-10 md:pt-14">
+    <main className="bg-white pt-10 md:pt-14">
       <div className="container-site">
         <ProductBreadcrumb name={product.name} />
         <ProductDetail product={product} />

@@ -12,7 +12,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
   const isHome = pathname === "/";
 
   return (
-    <div className="flex min-h-screen flex-col pb-16 lg:pb-0">
+    <div className="flex min-h-screen flex-col">
       <HeroNavbar />
       <div className={cn("flex-1", !isHome && "pt-[60px] lg:pt-[72px]")}>
         {children}

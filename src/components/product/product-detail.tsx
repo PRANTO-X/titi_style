@@ -4,7 +4,7 @@ import { ProductInfo } from "@/components/product/product-info";
 
 export function ProductDetail({ product }: { product: Product }) {
   return (
-    <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
+    <div className="grid gap-10 pb-8 md:pb-12 lg:grid-cols-2 lg:gap-16">
       <ProductImages images={product.images} name={product.name} />
       <ProductInfo product={product} />
     </div>

@@ -125,7 +125,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-dashed border-black/30">
-        <div className="container-site flex flex-col items-center justify-between gap-3 py-6 text-sm md:flex-row">
+        <div className="container-site flex flex-col items-center justify-between gap-3 pt-6 pb-20 text-sm lg:py-6 md:flex-row">
           <p>
             Copyright © 2026{" "}
             <Link href="/" className="text-primary">
