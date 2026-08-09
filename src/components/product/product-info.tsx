@@ -95,7 +95,9 @@ export function ProductInfo({ product }: { product: Product }) {
       </ul>
 
       <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center">
-        <QuantitySelector quantity={quantity} onChange={setQuantity} />
+        <div className="self-start">
+          <QuantitySelector quantity={quantity} onChange={setQuantity} />
+        </div>
         <div className="flex flex-1 flex-col gap-3 sm:flex-row">
           <Button variant="dark" size="lg" onClick={() => addToCart(product, quantity)}>
             Add to Cart
